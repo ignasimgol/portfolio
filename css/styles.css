@@ -169,7 +169,7 @@ section{
 }
 
 .section_3{
-    height: 1000vh;
+    height: 100vh;
 }
 
 
@@ -177,6 +177,7 @@ section{
 .container{
     padding: 5rem;
     padding-bottom: 0;
+    max-width: 100%;
 }
 
 
@@ -191,7 +192,7 @@ section{
     height: 100vh;
 }
 
-.scroll_section{
+/* .scroll_section{
     position: absolute;
     top: 0;
     height: 100%;
@@ -201,7 +202,7 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: 0 5vw;
-}
+} */
 
 img{
     width: 400px;
@@ -430,15 +431,24 @@ h5{
 
 /* mobil */
 
-@media only screen and (max-width: 573px) {
+/* small screen  */
+@media only screen and (min-width: 1300px) and (max-width: 1900px) {
+
     h1 {
-        font-size: 3rem;
-        margin-top: 2rem;
+        font-size: 9.5rem;
+        margin-top: 2.5rem;
     }
     h1:hover {
-        font-size: 3rem;
+        font-size: 7.5rem;
     }
 
+    section {
+        height: 100vh;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -448,7 +458,7 @@ h5{
         margin-top: 2.5rem;
     }
     h1:hover {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     h2 {
         font-size: 3rem;
@@ -597,7 +607,7 @@ h5{
      }
 
     section {
-        height: 53vh;
+        height: 33vh;
     }
 
     .section_1 {
@@ -606,7 +616,7 @@ h5{
 
     .section_3 {
         padding-top: -15rem;
-        height: 110vh;
+        height: 70vh;
     }
 
     .container{
@@ -652,11 +662,18 @@ h5{
         margin-top: 8rem;
     }
 }
-    
 
-/* small screen  */
-@media only screen and (min-width: 1024px) and (max-width: 1090px) {
-    .container{
-        padding-bottom: 0;
+@media only screen and (min-width: 250px) and (max-width: 573px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 2rem;
     }
+    h1:hover {
+        font-size: 4rem;
+    }
+
+    section {
+        height: 27vh;
+    }
+
 }

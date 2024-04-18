@@ -3,21 +3,25 @@ const blogPosts = [
         title: 'THE MAGIC PORTAL',
         time: 'three.js · JS',
         image: '/img/portal1.jpg', 
-        link: 'https://threedportal.vercel.app/'
+        link: 'https://threedportal.vercel.app/',
+        target: '_blank'
     },
     {
         title: 'PHOTOGRAPHER PORTFOLIO',
         time: 'HTML5 · CSS3 · JS',
         image: '/img/bymariadelrio.jpg', 
-        link: 'https://bymariadelrio-portfolio.vercel.app/' 
+        link: 'https://bymariadelrio-portfolio.vercel.app/',
+        target: '_blank' 
     },
     {
         title: 'THIS PORTFOLIO',
         time: 'HTML5 · CSS3 · JS',
         image: '/img/iggy.jpg', 
-        link: 'street.html' 
+        link: 'https://iggy-portfolio.netlify.app',
+        target: '_blank' 
     }
-]
+];
+
 
 const createBlogposts = () => {
     blogPosts.forEach(post => {
@@ -30,8 +34,10 @@ const createBlogposts = () => {
         let imageContainer = document.createElement('div');
         imageContainer.classList.add('post__image__container');
 
+        // Crea el enlace con el atributo target="_blank"
         let imageLink = document.createElement('a');
         imageLink.href = post.link; // Establece la URL de la página HTML
+        imageLink.target = '_blank'; // Abre el enlace en una nueva pestaña
 
         let image = document.createElement('img');
         image.classList.add('blog__post__img');

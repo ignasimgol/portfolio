@@ -152,12 +152,6 @@ html, body, main{
 }
 
 
-
-/* h1{
-    font-size: 5rem;
-    font-weight: 700;
-} */
-
 p{
     width: 70%;
     margin: 2rem 0;
@@ -169,7 +163,7 @@ section{
 }
 
 .section_3{
-    height: 100vh;
+    height: 130vh;
 }
 
 
@@ -429,21 +423,67 @@ h5{
 }
 
 
-/* mobil */
-
-/* small screen  */
-@media only screen and (min-width: 1300px) and (max-width: 1900px) {
+/* QUERYSSSSS  */
+@media only screen and (min-width: 1550px) {
 
     h1 {
-        font-size: 9.5rem;
+        font-size: 13rem;
         margin-top: 2.5rem;
     }
     h1:hover {
-        font-size: 7.5rem;
+        font-size: 13rem;
     }
 
     section {
-        height: 100vh;
+        height: 90vh;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    h1 {
+        font-size: 10rem;
+        margin-top: 2.5rem;
+    }
+
+    h1:hover {
+        font-size: 10rem;
+    }
+
+    section {
+        height: 90vh;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    h1 {
+        font-size: 8rem;
+        margin-top: 2.5rem;
+    }
+
+    h1:hover {
+        font-size: 8rem;
+    }
+
+    section {
+        height: 90vh;
+    }
+
+    .section_1 {
+        height: 110vh;
+    }
+
+    .section_3 {
+        height: 130vh;
     }
 
     .container{
@@ -505,7 +545,7 @@ h5{
     }
 
     .section_3 {
-        height: 110vh;
+        height: 100vh;
     }
 
     .container{
@@ -559,109 +599,7 @@ h5{
     
 }
 
-/* tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    
-    h1 {
-        font-size: 7rem;
-        margin-top: 2.5rem;
-    }
-    h1:hover {
-        font-size: 7rem;
-    }
-    h2 {
-        font-size: 4rem;
-    }
-    h2:hover {
-        font-size: 4rem;
-    }
-    h4 {
-
-        font-size: 1rem;
-    }
-    h5 {
-        font-size: 3em; 
-    }
-    .button {
-        font-size: 0.8rem;
-    }
-    .profile__social-link {
-        font-size: 0.8rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    h2 {
-        margin-top: 2rem;
-    }
-
-    .blog__hero {
-        height: 60vh;
-    }
-
-    .blog__hero {
-        margin-top: 40rem;
-     }
-
-    section {
-        height: 33vh;
-    }
-
-    .section_1 {
-        padding-top: 3.5rem;
-    }
-
-    .section_3 {
-        padding-top: -15rem;
-        height: 70vh;
-    }
-
-    .container{
-        padding: 4rem;
-    }
-
-    p{
-        width: 90%
-    }
-
-    img{
-        width: 300px;
-    }
-
-    .post{
-        width: 90%;
-    }
-    .post__details{
-        margin-top: 0.3rem;
-        margin-left: 2rem;
-    }
-    .post__details p {
-        font-size: 0.7rem;
-    }
-
-    .copied-text {
-        display: none;
-        position: absolute;
-        top: 22px;
-        right: 150px;
-        padding: 4px 8px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        font-size: 12px;
-        color: rgb(79, 76, 76);
-    }
-
-    .blog__hero {
-        height: 20%;
-    }
-
-    .sliding-text {
-        margin-top: 8rem;
-    }
-}
 
 @media only screen and (min-width: 250px) and (max-width: 573px) {
     h1 {
@@ -673,7 +611,7 @@ h5{
     }
 
     section {
-        height: 27vh;
+        height: 37vh;
     }
 
 }

@@ -99,11 +99,10 @@ themeButton.addEventListener('click', () => {
 
 
 // Función para copiar la dirección de correo electrónico al portapapeles
+// Función para copiar la dirección de correo electrónico al portapapeles
 function copiarCorreo() {
-    // Seleccionar el elemento que contiene la dirección de correo electrónico
-    var correoElemento = document.getElementById("correo");
-    // Obtener la dirección de correo electrónico del atributo href
-    var correo = correoElemento.getAttribute("href").replace("mailto:", "");
+    // Obtener la dirección de correo electrónico del atributo data-correo del icono
+    var correo = document.querySelector("#correo .correo").getAttribute("data-correo");
     
     // Crear un campo de texto temporal para copiar la dirección de correo electrónico
     var inputTemp = document.createElement("input");
